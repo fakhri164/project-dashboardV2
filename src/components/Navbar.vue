@@ -1,7 +1,8 @@
 <template>
   <header
-    class="navbar dark:bg-backgroundDark dark:border-b dark:border-primary/10 sticky top-0 z-10 shadow-sm"
-  >
+    class="navbar sticky top-0 z-10 shadow-sm border-b"
+    :class="isDark ? 'bg-[#1a1f2e] border-gray-700' : 'bg-white border-gray-200'"
+    >
     <nav class="flex:none lg:hidden">
       <label @click="$emit('toggle-drawer')" class="btn btn-square btn-ghost">
         <Icon

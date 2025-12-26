@@ -1,9 +1,13 @@
-<template lang="">
+<template >
   <div class="drawer lg-drawer-open font-display">
-    <input type="checkbox" id="my-drawer" class="drawer-toggle" />
-    <!-- Page Content-->
+   <input type="checkbox" id="my-drawer" class="drawer-toggle" />
+    
     <div class="drawer-content flex flex-col">
-      <Navbar :isDark="isDark" @toggle-drawer="toggleDrawer" @toggle-theme="toggleTheme" />
+      <Navbar 
+        :isDark="isDark" 
+        @toggle-drawer="toggleDrawer" 
+        @toggle-theme="toggleTheme" 
+      />
     </div>
   </div>
 </template>
