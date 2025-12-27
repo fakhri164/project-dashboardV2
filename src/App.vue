@@ -9,8 +9,48 @@
         @toggle-drawer="toggleDrawer"
         @toggle-theme="toggleTheme"
       />
-      <main class="flex-1 p-6">
-        <h1 class="text-2xl font-bold">Dashboard Content</h1>
+      
+      <main class="flex-1 p-6 bg-base-200 dark:bg-backgroundDark">
+        <!-- Dashboard Content (hanya muncul di route '/') -->
+        <div v-if="$route.path === '/'">
+          <!-- Stats Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+            <StatsCard 
+              title="Total Users"
+              value="12,345"
+              percentage="14%"
+              trend="up"
+              :isDark="isDark"
+            />
+            <StatsCard 
+              title="Revenue"
+              value="$42,256"
+              percentage="23%"
+              trend="up"
+              :isDark="isDark"
+            />
+            <StatsCard 
+              title="New Orders"
+              value="56"
+              percentage="8%"
+              trend="down"
+              :isDark="isDark"
+            />
+            <StatsCard 
+              title="Active Projects"
+              value="56"
+              percentage="8%"
+              trend="up"
+              :isDark="isDark"
+            />
+          </div>
+
+          <!-- Charts Component -->
+          <Charts :isDark="isDark" />
+        </div>
+
+        <!-- Router View untuk halaman lain -->
+        <router-view v-else />
       </main>
     </div>
     
@@ -23,11 +63,16 @@
 </template>
 
 <script setup>
-import { onMounted, ref, watchEffect } from 'vue';
+import { onMounted, ref, watchEffect, provide } from 'vue';
 import Navbar from './components/Navbar.vue';
 import Sidebar from './components/Sidebar.vue';
+import StatsCard from './components/StatsCard.vue';
+import Charts from './components/Charts.vue';
 
 const isDark = ref(true);
+
+// Provide isDark agar bisa diakses di child components
+provide('isDark', isDark);
 
 onMounted(() => {
   const savedTheme = localStorage.getItem('theme');

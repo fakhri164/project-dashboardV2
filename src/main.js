@@ -2,5 +2,8 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 import { Icon } from "@iconify/vue";
+import router from './router/index.js'
 
-createApp(App).component("Icon",Icon).mount('#app')
+const app = createApp(App).component("Icon",Icon);
+app.use(router);
+app.mount('#app')
