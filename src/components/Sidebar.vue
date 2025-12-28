@@ -5,7 +5,7 @@
   >
     <!-- Header -->
     <div 
-      class="p-4 border-b h-73px flex items-center"
+      class="p-4 border-b h-16 flex items-center"
       :class="isDark ? 'border-gray-700' : 'border-gray-200'"
     >
       <h1 

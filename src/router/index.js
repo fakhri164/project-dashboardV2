@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Analytics from '../assets/views/Analytics.vue';
-import Reports from '../assets/views/Reports.vue';
-import Users from '../asset/views/Users.vue';
-import AllUsers from '../asset/views/AllUsers.vue';
-import AddNewUser from '../asset/views/AddNewUser.vue';
-import RolesPermissions from '../asset/views/RolesPermissions.vue';
-import Products from '../asset/views/Products.vue';
-import Messages from '../asset/views/Messages.vue';
-import Settings from '../asset/views/Settings.vue';
+import Analytics from '../views/Analytics.vue'
+import Reports from '../views/Reports.vue'
+import Users from '../views/Users.vue'
+import AllUsers from '../views/AllUsers.vue'
+import AddNewUser from '../views/AddNewUsers.vue'
+import RolesPermissions from '../views/RolesPermissions.vue'
+import Products from '../views/Products.vue'
+import Messages from '../views/Messages.vue'
+import Settings from '../views/Settings.vue'
 
 const routes = [
   {
