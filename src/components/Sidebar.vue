@@ -33,14 +33,14 @@
         </router-link>
 
         <!-- Menu dengan children -->
-        <div v-else>
+          <div v-else>
           <button
             @click="toggleSubmenu(index)"
             class="flex items-center w-full text-left px-4 py-2.5 rounded-lg transition-colors"
             :class="isActive(link.path)
-              ? 'bg-primary text-white' 
-              : (isDark ? 'text-white hover:bg-white/10' : 'text-black hover:bg-gray-100')"
-          >
+            ? 'bg-primary text-white' 
+            : (isDark ? 'text-white hover:bg-white/10' : 'text-black hover:bg-gray-100')"
+            >
             <Icon :icon="link.icon" class="h-5 w-5 mr-3" />
             <span class="flex-1">{{ link.name }}</span>
             <Icon 
@@ -112,8 +112,14 @@ const links = ref([
   },
   {
     name: 'Products',
-    icon: 'line-md:shopping-bag',
+    icon: 'mdi:shopping',
     path: '/products',
+    children: [
+      { name: 'All Products', path: '/products/all' },
+      { name: 'Add New', path: '/products/add-new' },
+      { name: 'Categories', path: '/products/categories' },
+    ],
+    open: false,
   },
   {
     name: 'Messages',

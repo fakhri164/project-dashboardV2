@@ -6,6 +6,9 @@ import AllUsers from '../views/AllUsers.vue'
 import AddNewUser from '../views/AddNewUsers.vue'
 import RolesPermissions from '../views/RolesPermissions.vue'
 import Products from '../views/Products.vue'
+import AllProducts from '../views/AllProducts.vue'
+import AddNewProduct from '../views/AddNewProducts.vue'
+import Categories from '../views/Categories.vue'
 import Messages from '../views/Messages.vue'
 import Settings from '../views/Settings.vue'
 
@@ -39,6 +42,26 @@ const routes = [
     path: '/users/roles-permissions',
     name: 'RolesPermissions',
     component: RolesPermissions
+  },
+  {
+    path: '/products',
+    name: 'Products',
+    component: Products
+  },
+  {
+    path: '/products/all',
+    name: 'AllProducts',
+    component: AllProducts
+  },
+  {
+    path: '/products/add-new',
+    name: 'AddNewProduct',
+    component: AddNewProduct
+  },
+  {
+    path: '/products/categories',
+    name: 'Categories',
+    component: Categories
   },
   {
     path: '/products',
