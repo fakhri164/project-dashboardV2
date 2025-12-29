@@ -112,7 +112,7 @@ const links = ref([
   },
   {
     name: 'Products',
-    icon: 'mdi:shopping',
+    icon: 'mdi:shopping-outline',
     path: '/products',
     children: [
       { name: 'All Products', path: '/products/all' },
