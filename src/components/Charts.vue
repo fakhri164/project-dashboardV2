@@ -45,7 +45,7 @@ import {
   Legend
 } from 'chart.js';
 
-// Register all Chart.js components
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -135,10 +135,10 @@ const doughnutChartData = {
     {
       data: [35, 25, 20, 20],
       backgroundColor: [
-        '#6366f1', // Blue/Purple
-        '#ec4899', // Pink
-        '#eab308', // Yellow
-        '#fb923c', // Orange
+        '#6366f1',
+        '#ec4899',
+        '#eab308',
+        '#fb923c',
       ],
       borderColor: props.isDark ? '#1e293b' : '#ffffff',
       borderWidth: 3,

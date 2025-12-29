@@ -11,7 +11,7 @@
       />
       
       <main class="flex-1 p-6 bg-base-200 dark:bg-backgroundDark">
-        <!-- Dashboard Content (hanya muncul di route '/') -->
+        <!-- Dashboard Content -->
         <div v-if="$route.path === '/'">
           <!-- Stats Cards Grid -->
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">

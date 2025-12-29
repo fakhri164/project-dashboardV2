@@ -32,7 +32,7 @@
           <span class="ml-3">{{ link.name }}</span>
         </router-link>
 
-        <!-- Menu dengan children -->
+        <!-- Menu berchildren -->
         <div v-else>
           <button
             @click="toggleSubmenu(index)"
