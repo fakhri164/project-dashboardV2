@@ -17,55 +17,55 @@
     </div>
     
     <!-- Menu -->
-    <ul class="menu p-4">
-      <li v-for="(link, index) in links" :key="index" class="mb-1">
+    <div class="p-4 space-y-1">
+      <div v-for="(link, index) in links" :key="index">
         <!-- Menu tanpa children -->
         <router-link
           v-if="!link.children"
           :to="link.path"
-          class="flex items-center w-full text-left px-4 py-2.5 rounded-lg transition-colors"
+          class="flex items-center px-4 py-2.5 rounded-lg transition-colors"
           :class="isActive(link.path)
             ? 'bg-primary text-white' 
             : (isDark ? 'text-white hover:bg-white/10' : 'text-black hover:bg-gray-100')"
         >
-          <Icon :icon="link.icon" class="h-5 w-5 mr-3" />
-          <span class="flex-1">{{ link.name }}</span>
+          <Icon :icon="link.icon" class="h-5 w-5 shrink-0" />
+          <span class="ml-3">{{ link.name }}</span>
         </router-link>
 
         <!-- Menu dengan children -->
-          <div v-else>
+        <div v-else>
           <button
             @click="toggleSubmenu(index)"
             class="flex items-center w-full text-left px-4 py-2.5 rounded-lg transition-colors"
-            :class="isActive(link.path)
-            ? 'bg-primary text-white' 
-            : (isDark ? 'text-white hover:bg-white/10' : 'text-black hover:bg-gray-100')"
-            >
-            <Icon :icon="link.icon" class="h-5 w-5 mr-3" />
-            <span class="flex-1">{{ link.name }}</span>
+            :class="isActiveParent(link)
+              ? 'bg-primary text-white' 
+              : (isDark ? 'text-white hover:bg-white/10' : 'text-black hover:bg-gray-100')"
+          >
+            <Icon :icon="link.icon" class="h-5 w-5 shrink-0" />
+            <span class="ml-3 flex-1">{{ link.name }}</span>
             <Icon 
               :icon="link.open ? 'line-md:chevron-down' : 'line-md:chevron-right'" 
-              class="h-4 w-4"
+              class="h-4 w-4 shrink-0"
             />
           </button>
           
           <!-- Sub-menu -->
-          <ul v-if="link.open" class="ml-8 mt-1">
-            <li v-for="(child, childIndex) in link.children" :key="childIndex" class="mb-1">
-              <router-link
-                :to="child.path"
-                class="block px-4 py-2 text-sm rounded-lg transition-colors"
-                :class="isActive(child.path)
-                  ? 'bg-primary/20 text-primary'
-                  : (isDark ? 'text-white hover:bg-white/10' : 'text-black hover:bg-gray-100')"
-              >
-                {{ child.name }}
-              </router-link>
-            </li>
-          </ul>
+          <div v-if="link.open" class="mt-1 pl-11 space-y-1">
+            <router-link
+              v-for="(child, childIndex) in link.children"
+              :key="childIndex"
+              :to="child.path"
+              class="flex items-center px-4 py-2 rounded-lg transition-colors text-sm"
+              :class="isActive(child.path)
+                ? 'bg-primary/20 text-primary font-medium'
+                : (isDark ? 'text-gray-400 hover:bg-white/10 hover:text-white' : 'text-gray-600 hover:bg-gray-100 hover:text-black')"
+            >
+              {{ child.name }}
+            </router-link>
+          </div>
         </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -134,7 +134,15 @@ const links = ref([
 ]);
 
 const isActive = (path) => {
-  return route.path === path || route.path.startsWith(path + '/');
+  return route.path === path;
+};
+
+const isActiveParent = (link) => {
+  if (route.path === link.path) return true;
+  if (link.children) {
+    return link.children.some(child => route.path === child.path);
+  }
+  return false;
 };
 
 const toggleSubmenu = (index) => {
