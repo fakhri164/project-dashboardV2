@@ -11,6 +11,7 @@ import AddNewProduct from '../views/AddNewProducts.vue'
 import Categories from '../views/Categories.vue'
 import Messages from '../views/Messages.vue'
 import Settings from '../views/Settings.vue'
+import Profile from '../views/Profile.vue';
 
 const routes = [
   {
@@ -77,6 +78,11 @@ const routes = [
     path: '/settings',
     name: 'Settings',
     component: Settings
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: Profile
   }
 ];
 

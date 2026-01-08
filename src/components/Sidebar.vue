@@ -131,6 +131,11 @@ const links = ref([
     icon: 'line-md:cog',
     path: '/settings',
   },
+  {
+    name: 'Profile',
+    icon: 'icon-park-outline:user',
+    path: '/profile',
+  }
 ]);
 
 const isActive = (path) => {
