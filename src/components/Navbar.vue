@@ -28,8 +28,7 @@
       <div class="dropdown dropdown-end">
         <button tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
           <div class="w-10 rounded-full">
-            <!---<img src="/rh.jpeg" alt="rhl" />-->
-            <img src="/p.jpg" alt="p" />
+            <img src="/rhl.jpeg" alt="rhl" />
           </div>
         </button>
         <ul tabindex="0" class="mt-5 z-1 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-58 space-y-3 dark:bg-backgroundDark **:font-semibold">
