@@ -32,9 +32,24 @@
           </div>
         </button>
         <ul tabindex="0" class="mt-5 z-1 p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-58 space-y-3 dark:bg-backgroundDark **:font-semibold">
-          <li><a>Profile</a></li>
-          <li><a>settings</a></li>
-          <li><a>Logout</a></li>
+          <li>
+            <router-link to="/profile" class="flex items-center gap-2">
+              <Icon icon="line-md:account" class="h-5 w-5" />
+                Profile
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/settings" class="flex items-center gap-2">
+              <Icon icon="line-md:cog" class="h-5 w-5" />
+                Settings
+            </router-link>
+          </li>
+          <li>
+            <a @click="handleLogout" class="flex items-center gap-2 text-error">
+              <Icon icon="line-md:logout" class="h-5 w-5" />
+                Logout
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -52,4 +67,10 @@ defineProps({
 });
 
 defineEmits(['toggle-drawer', 'toggle-theme']);
+
+const handleLogout = () => {
+  // Logic logout nanti ditambahkan di sini
+  console.log('Logout clicked');
+  alert('Logout functionality will be implemented later');
+};
 </script>
