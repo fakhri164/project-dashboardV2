@@ -125,7 +125,7 @@
               <Icon icon="line-md:phone" class="h-5 w-5" />
             </button>
             <button class="btn btn-ghost btn-sm btn-circle">
-              <Icon icon="line-md:video" class="h-5 w-5" />
+              <Icon icon="icons8:video-call" class="h-5 w-5" />
             </button>
             <button class="btn btn-ghost btn-sm btn-circle">
               <Icon icon="line-md:menu" class="h-5 w-5" />
