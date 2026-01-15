@@ -170,27 +170,27 @@
             </div>
 
             <div>
-              <label 
-                class="text-sm font-medium mb-2 block"
-                :class="isDark ? 'text-gray-400' : 'text-gray-600'"
-                >
-                Sidebar Width
-              </label>
-              <input 
-                v-model="sidebarWidth"
-                type="range" 
-                min="240" 
-                max="400" 
-                step="10"
-                class="range range-primary" 
-  />
-  <div class="flex justify-between text-xs mt-2" :class="isDark ? 'text-gray-400' : 'text-gray-600'">
-    <span>Compact (240px)</span>
-    <span class="font-medium">{{ sidebarWidth }}px</span>
-    <span>Wide (400px)</span>
-  </div>
-</div>
-
+              <div>
+                <label 
+                  class="text-sm font-medium mb-2 block"
+                  :class="isDark ? 'text-gray-400' : 'text-gray-600'"
+                  >
+                  Sidebar Width
+                </label>
+                <input 
+                  v-model.number="sidebarWidth"
+                  type="range" 
+                  min="240" 
+                  max="400" 
+                  step="10"
+                  class="range range-primary w-full" 
+                />
+                <div class="flex justify-between text-xs mt-2" :class="isDark ? 'text-gray-400' : 'text-gray-600'">
+                  <span>Compact</span>
+                  <span>Wide</span>
+                </div>
+              </div>
+            </div>      
             <div class="flex items-center justify-between p-4 rounded-lg" :class="isDark ? 'bg-gray-800' : 'bg-gray-100'">
               <div>
                 <p :class="isDark ? 'text-white font-medium' : 'text-black font-medium'">Compact Mode</p>
