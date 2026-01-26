@@ -99,6 +99,7 @@
                 <option>Bahasa Indonesia</option>
                 <option>日本語 (Japanese)</option>
                 <option>中文 (Chinese)</option>
+                <option>한국어 (Korea)</option>
               </select>
             </div>
 
