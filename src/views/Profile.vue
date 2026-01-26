@@ -31,7 +31,16 @@
             Administrator
           </p>
           
-          <div class="badge badge-primary mt-2">Pro Member</div>
+          <div class="badge badge-primary mt-2">
+            <select 
+              class="bg-primary border-0 p-0 text-white"
+              :class="isDark ? 'text-white' : 'text-black'"
+            >
+              <option>admin</option>
+              <option>user</option>
+              <option>bos</option>
+            </select>
+          </div>
           
           <div class="divider"></div>
           
