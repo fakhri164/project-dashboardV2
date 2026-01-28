@@ -66,11 +66,11 @@ const props = defineProps({
 
 // Line Chart Data
 const lineChartData = {
-  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   datasets: [
     {
       label: 'Revenue ($)',
-      data: [12000, 5000, 8000, 10000, 18000, 4000],
+      data: [12000, 5000, 8000, 10000, 18000, 14000, 16000, 12000, 14000, 18000, 22000, 25000],
       borderColor: '#ec4899',
       backgroundColor: 'rgba(236, 72, 153, 0.1)',
       tension: 0.4,
