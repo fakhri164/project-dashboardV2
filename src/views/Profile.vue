@@ -24,11 +24,11 @@
             class="text-2xl font-bold"
             :class="isDark ? 'text-white' : 'text-black'"
           >
-            M. Fakhri Abdilah
+            ri
           </h2>
           
           <p :class="isDark ? 'text-gray-400' : 'text-gray-600'">
-            Administrator
+            CEO
           </p>
           
           <div class="badge badge-primary mt-2">
@@ -36,9 +36,9 @@
               class="bg-primary border-0 p-0 text-white"
               :class="isDark ? 'text-white' : 'text-black'"
             >
-              <option>admin</option>
-              <option>user</option>
-              <option>bos</option>
+              <option>CEO</option>
+              <option>Admin</option>
+              <option>User</option>
             </select>
           </div>
           
@@ -89,7 +89,7 @@
                 </label>
                 <input 
                   type="text" 
-                  value="M. Fakhri Abdilah"
+                  value="ri"
                   class="input input-bordered w-full"
                   :class="isDark ? 'bg-gray-800 text-white' : 'bg-white text-black'"
                 />
@@ -104,7 +104,7 @@
                 </label>
                 <input 
                   type="email" 
-                  value="fakhri@example.com"
+                  value="riiii@example.com"
                   class="input input-bordered w-full"
                   :class="isDark ? 'bg-gray-800 text-white' : 'bg-white text-black'"
                 />
@@ -119,7 +119,7 @@
                 </label>
                 <input 
                   type="tel" 
-                  value="0838-1366-7399"
+                  value="0838-1256-7659"
                   class="input input-bordered w-full"
                   :class="isDark ? 'bg-gray-800 text-white' : 'bg-white text-black'"
                 />
