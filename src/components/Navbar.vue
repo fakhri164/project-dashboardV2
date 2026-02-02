@@ -71,6 +71,6 @@ defineEmits(['toggle-drawer', 'toggle-theme']);
 const handleLogout = () => {
   // Logic logout nanti ditambahkan di sini
   console.log('Logout clicked');
-  alert('Logout functionality will be implemented later');
+  alert('Logout functionality will be implemented later :)');
 };
 </script>
