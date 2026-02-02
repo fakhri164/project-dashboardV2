@@ -221,56 +221,96 @@ const contacts = ref([
   {
     id: 1,
     name: 'Rahel Lois',
-    avatar: 'https://ui-avatars.com/api/?name=Rahel+Lois&background=3b82f6&color=fff',
-    lastMessage: 'I miss you so much!',
-    time: '1m ago',
+    avatar: 'https://ui-avatars.com/api/?name=Rahel+Lois&background=6366f1&color=fff',
+    lastMessage: 'I miss you so muchhh!!!',
+    time: '2m ago',
     unread: 1,
     online: true,
+    messages: [
+      { id: 1, text: 'Hai ri apa kabar', time: '10:30 AM', isMine: false, read: true },
+      { id: 2, text: "Haii baikk, kamu gimana?", time: '10:32 AM', isMine: true, read: true },
+      { id: 3, text: 'Aku baik baik aja koo', time: '10:35 AM', isMine: false, read: true },
+      { id: 4, text: 'Sekarang kamu kerja dimana ri?', time: '10:36 AM', isMine: false, read: true },
+      { id: 5, text: 'Aku kerja di rumah, kamu kerja dimana sekarang?', time: '10:37 AM', isMine: true, read: true },
+      { id: 6, text: 'Aku kerja di Indomaret', time: '10:38 AM', isMine: false, read: true },
+      { id: 7, text: 'BTW aku mau ngomong sesuatu ri', time: '10:39 AM', isMine: false, read: true },
+      { id: 8, text: 'ngomong apa tuhh?', time: '10:39 AM', isMine: true, read: true },
+      { id: 9, text: 'I miss you so muchhh!!!', time: '10:40 AM', isMine: false, read: false },
+    ]
   },
   {
     id: 2,
-    name: 'Muhamad Ceri',
-    avatar: 'https://ui-avatars.com/api/?name=Muhamad+Ceri&background=8b5cf6&color=fff',
-    lastMessage: 'Bisa dikirm hari ini ga?',
+    name: 'Michael schumacer',
+    avatar: 'https://ui-avatars.com/api/?name=Michael+schumacer&background=8b5cf6&color=fff',
+    lastMessage: 'Can you send me the report?',
     time: '15m ago',
     unread: 1,
     online: true,
+    messages: [
+      { id: 1, text: 'Hi! Do you have the quarterly report?', time: '9:15 AM', isMine: false, read: true },
+      { id: 2, text: 'Yes, let me find it.', time: '9:17 AM', isMine: true, read: true },
+      { id: 3, text: 'Can you send me the report?', time: '9:20 AM', isMine: false, read: true },
+    ]
   },
   {
     id: 3,
-    name: 'Emanuel rosidi',
-    avatar: 'https://ui-avatars.com/api/?name=Emanuel+rosidi&background=ec4899&color=fff',
-    lastMessage: 'Terimakasih ya!',
+    name: 'Esteban Ocon',
+    avatar: 'https://ui-avatars.com/api/?name=Esteban+Ocon&background=ec4899&color=fff',
+    lastMessage: 'Thanks for your help!',
     time: '1h ago',
-    unread: 2,
+    unread: 0,
     online: false,
+    messages: [
+      { id: 1, text: 'I need help with the dashboard design.', time: 'Yesterday', isMine: false, read: true },
+      { id: 2, text: 'Sure! What do you need?', time: 'Yesterday', isMine: true, read: true },
+      { id: 3, text: 'Can you review my mockups?', time: 'Yesterday', isMine: false, read: true },
+      { id: 4, text: 'Looking at them now, looks great!', time: 'Yesterday', isMine: true, read: true },
+      { id: 5, text: 'Thanks for your help!', time: '1h ago', isMine: false, read: true },
+    ]
   },
   {
     id: 4,
-    name: 'David Kurniawan',
-    avatar: 'https://ui-avatars.com/api/?name=David+Kurniawan&background=f59e0b&color=fff',
-    lastMessage: 'See you tomorrow bro 👋',
+    name: 'Max Verstappen',
+    avatar: 'https://ui-avatars.com/api/?name=Max+Verstappen&background=f59e0b&color=fff',
+    lastMessage: 'Perfect! See you tomorrow 👋',
     time: '3h ago',
     unread: 0,
     online: false,
+    messages: [
+      { id: 1, text: 'Are we still on for tomorrow\'s meeting?', time: '2:30 PM', isMine: false, read: true },
+      { id: 2, text: 'Yes! 10 AM sharp.', time: '2:32 PM', isMine: true, read: true },
+      { id: 3, text: 'Perfect! See you tomorrow 👋', time: '2:35 PM', isMine: false, read: true },
+    ]
   },
   {
     id: 5,
-    name: 'Lalisa',
-    avatar: 'https://ui-avatars.com/api/?name=Lalisa&background=10b981&color=fff',
-    lastMessage: 'Jujurr Project lu bagus bro',
+    name: 'oliver Bearman',
+    avatar: 'https://ui-avatars.com/api/?name=oliver+Bearman&background=10b981&color=fff',
+    lastMessage: 'The project looks great!',
     time: '1d ago',
     unread: 0,
     online: true,
+    messages: [
+      { id: 1, text: 'I reviewed the latest updates.', time: 'Yesterday', isMine: false, read: true },
+      { id: 2, text: 'What do you think?', time: 'Yesterday', isMine: true, read: true },
+      { id: 3, text: 'The project looks great! Well done! 🎉', time: 'Yesterday', isMine: false, read: true },
+      { id: 4, text: 'Thank you so much! 😊', time: 'Yesterday', isMine: true, read: true },
+    ]
   },
   {
     id: 6,
-    name: 'Sarah Jannah',
-    avatar: 'https://ui-avatars.com/api/?name=Sarah+Jannah&background=6366f1&color=fff',
-    lastMessage: 'Halo lagi apa?',
-    time: '2m ago',
-    unread: 0,
+    name: 'Lewis Hamilton',
+    avatar: 'https://ui-avatars.com/api/?name=Lewis+Hamilton&background=3b82f6&color=fff',
+    lastMessage: 'yeahh i do it later bro thank you',
+    time: '2d ago',
+    unread: 1,
     online: false,
+    messages: [
+      { id: 1, text: 'Bro why you team so suck', time: '2 days ago', isMine: true, read: true },
+      { id: 2, text: 'Idk bro :)', time: '2 days ago', isMine: false, read: true },
+      { id: 3, text: 'Tell to your engineer to learn properly lahh', time: '2 days ago', isMine: true, read: true },
+      { id: 4, text: 'yeahh i do it later bro thank you', time: '1 days ago', isMine: false, read: false },
+    ]
   },
 ]);
 
@@ -280,72 +320,8 @@ const selectContact = (contact) => {
   selectedContact.value = contact;
   contact.unread = 0;
   
-  // Load messages for this contact
-  messages.value = [
-    {
-      id: 1,
-      text: 'Halo Fakhri lagi apa?',
-      time: '10:30 AM',
-      isMine: false,
-      read: true,
-    },
-    {
-      id: 2,
-      text: "Lagi ngoding nih, kamu?",
-      time: '10:32 AM',
-      isMine: true,
-      read: true,
-    },
-    {
-      id: 3,
-      text: "Aku Lagi Kerja nih",
-      time: '10:35 AM',
-      isMine: false,
-      read: true,
-    },
-    {
-      id: 4,
-      text: 'sekarang kerja dimana kamu?',
-      time: '10:36 AM',
-      isMine: true,
-      read: true,
-    },
-    {
-      id: 5,
-      text: "Aku kerja di indomaret sekarang",
-      time: '10:40 AM',
-      isMine: false,
-      read: true,
-    },
-    {
-      id: 6,
-      text: 'wihhh mantappp, semanagat kerjanya yaaa',
-      time: '10:42 AM',
-      isMine: true,
-      read: true,
-    },
-    {
-      id: 7,
-      text: 'BTW aku mau jujur!',
-      time: '10:45 AM',
-      isMine: false,
-      read: false,
-    },
-    {
-      id: 8,
-      text: 'Jujur apa tuhh?',
-      time: '10:46 AM',
-      isMine: true,
-      read: false,
-    },
-    {
-      id: 9,
-      text: 'I miss you so muchhhhhh 😢',
-      time: '10:50 AM',
-      isMine: false,
-      read: false,
-    },
-  ];
+  // Load messages dari contact yang dipilih
+  messages.value = [...contact.messages];
 
   nextTick(() => {
     scrollToBottom();
@@ -353,7 +329,7 @@ const selectContact = (contact) => {
 };
 
 const sendMessage = () => {
-  if (!newMessage.value.trim()) return;
+  if (!newMessage.value.trim() || !selectedContact.value) return;
 
   const now = new Date();
   const timeString = now.toLocaleTimeString('en-US', { 
@@ -361,13 +337,23 @@ const sendMessage = () => {
     minute: '2-digit' 
   });
 
-  messages.value.push({
+  const newMsg = {
     id: messages.value.length + 1,
     text: newMessage.value,
     time: timeString,
     isMine: true,
     read: false,
-  });
+  };
+
+  // Tambahkan ke messages yang sedang dibuka
+  messages.value.push(newMsg);
+  
+  // Simpan juga ke data contact
+  selectedContact.value.messages.push(newMsg);
+  
+  // Update lastMessage di contact list
+  selectedContact.value.lastMessage = newMessage.value;
+  selectedContact.value.time = 'Just now';
 
   newMessage.value = '';
 
@@ -377,16 +363,20 @@ const sendMessage = () => {
 
   // Simulate reply after 2 seconds
   setTimeout(() => {
-    messages.value.push({
+    const replyMsg = {
       id: messages.value.length + 1,
-      text: "Hehehehe, sorry lama ngasih tau nya",
+      text: "iya aku udah nahan ini dari lama banget, kalau kamu gimana?",
       time: new Date().toLocaleTimeString('en-US', { 
         hour: '2-digit', 
         minute: '2-digit' 
       }),
       isMine: false,
       read: true,
-    });
+    };
+
+    messages.value.push(replyMsg);
+    selectedContact.value.messages.push(replyMsg);
+    selectedContact.value.lastMessage = replyMsg.text;
 
     nextTick(() => {
       scrollToBottom();
