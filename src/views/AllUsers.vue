@@ -313,8 +313,8 @@ const filterRole = ref('');
 const users = ref([
   {
     id: 1001,
-    name: 'John Doe',
-    email: 'john.doe@example.com',
+    name: 'Jamal',
+    email: 'jamal.aja@example.com',
     phone: '+62 812 3456 7890',
     role: 'Admin',
     status: 'Active',
@@ -322,12 +322,12 @@ const users = ref([
     joinDate: 'Jan 15, 2024',
     lastActive: '2 hours ago',
     online: true,
-    avatar: 'https://ui-avatars.com/api/?name=John+Doe&background=6366f1&color=fff'
+    avatar: 'https://ui-avatars.com/api/?name=Jamal+Aja&background=6366f1&color=fff'
   },
   {
     id: 1002,
-    name: 'Jane Smith',
-    email: 'jane.smith@example.com',
+    name: 'Steven',
+    email: 'steven1@example.com',
     phone: '+62 813 9876 5432',
     role: 'Manager',
     status: 'Active',
@@ -335,12 +335,12 @@ const users = ref([
     joinDate: 'Feb 20, 2024',
     lastActive: '5 minutes ago',
     online: true,
-    avatar: 'https://ui-avatars.com/api/?name=Jane+Smith&background=8b5cf6&color=fff'
+    avatar: 'https://ui-avatars.com/api/?name=Steven&background=8b5cf6&color=fff'
   },
   {
     id: 1003,
-    name: 'Bob Johnson',
-    email: 'bob.johnson@example.com',
+    name: 'Bobi Wiliam',
+    email: 'bobi.wiliam@example.com',
     phone: '+62 821 1234 5678',
     role: 'User',
     status: 'Active',
@@ -348,7 +348,7 @@ const users = ref([
     joinDate: 'Mar 10, 2024',
     lastActive: '1 day ago',
     online: false,
-    avatar: 'https://ui-avatars.com/api/?name=Bob+Johnson&background=ec4899&color=fff'
+    avatar: 'https://ui-avatars.com/api/?name=Bobi+Wiliam&background=ec4899&color=fff'
   },
   {
     id: 1004,
@@ -365,8 +365,8 @@ const users = ref([
   },
   {
     id: 1005,
-    name: 'Charlie Brown',
-    email: 'charlie.brown@example.com',
+    name: 'Ceri blossom',
+    email: 'ceri.blossom@example.com',
     phone: '+62 823 5555 6666',
     role: 'User',
     status: 'Active',
@@ -374,7 +374,7 @@ const users = ref([
     joinDate: 'Apr 1, 2024',
     lastActive: '3 hours ago',
     online: true,
-    avatar: 'https://ui-avatars.com/api/?name=Charlie+Brown&background=10b981&color=fff'
+    avatar: 'https://ui-avatars.com/api/?name=Ceri+Blossom&background=10b981&color=fff'
   },
   {
     id: 1006,
@@ -391,8 +391,8 @@ const users = ref([
   },
   {
     id: 1007,
-    name: 'Edward Norton',
-    email: 'edward.norton@example.com',
+    name: 'Edward Halim',
+    email: 'edward.halim@example.com',
     phone: '+62 825 4444 3333',
     role: 'Guest',
     status: 'Inactive',
@@ -400,12 +400,12 @@ const users = ref([
     joinDate: 'May 10, 2024',
     lastActive: '2 weeks ago',
     online: false,
-    avatar: 'https://ui-avatars.com/api/?name=Edward+Norton&background=ef4444&color=fff'
+    avatar: 'https://ui-avatars.com/api/?name=Edward+Halim&background=ef4444&color=fff'
   },
   {
     id: 1008,
-    name: 'Fiona Garcia',
-    email: 'fiona.garcia@example.com',
+    name: 'Gracia',
+    email: 'gracia@example.com',
     phone: '+62 826 1111 2222',
     role: 'Manager',
     status: 'Active',
@@ -413,7 +413,7 @@ const users = ref([
     joinDate: 'Feb 28, 2024',
     lastActive: 'Just now',
     online: true,
-    avatar: 'https://ui-avatars.com/api/?name=Fiona+Garcia&background=14b8a6&color=fff'
+    avatar: 'https://ui-avatars.com/api/?name=Gracia&background=14b8a6&color=fff'
   },
 ]);
 
