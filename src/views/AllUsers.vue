@@ -164,7 +164,8 @@
               >
                 <li><a><Icon icon="line-md:eye" class="h-4 w-4" /> View Profile</a></li>
                 <li><a><Icon icon="line-md:edit" class="h-4 w-4" /> Edit User</a></li>
-                <li><a class="text-error"><Icon icon="line-md:remove" class="h-4 w-4" /> Delete</a></li>
+                <li><a @click="handledelete" class="text-error">
+                  <Icon icon="line-md:remove" class="h-4 w-4" /> Delete</a></li>
               </ul>
             </div>
           </div>
@@ -309,7 +310,10 @@ const viewMode = ref('grid'); // 'grid' or 'list'
 const search = ref('');
 const sortBy = ref('name');
 const filterRole = ref('');
-
+const handledelete = () => {
+  console.log('Delete user clicked');
+  alert('Delete user functionality to be implemented later :).');
+};
 const users = ref([
   {
     id: 1001,
